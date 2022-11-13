@@ -94,4 +94,4 @@ scripts:
       rm -rf ./build ./android/.gradle ./ios/.symlinks ./ios/Pods ./android/.idea ./.idea
 
 dev_dependencies:
-  pedantic: ^1.9.0
+  pedantic: <=1.9.2

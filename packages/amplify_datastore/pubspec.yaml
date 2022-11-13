@@ -1,25 +1,34 @@
 name: amplify_datastore
 description: The Amplify Flutter DataStore category plugin.
-version: 0.1.5
+version: 0.1.6
 homepage: https://github.com/aws-amplify/amplify-flutter/tree/master/packages/amplify_datastore
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.11.0 <3.0.0"
+  flutter: "<=2.0.6"
 
 dependencies:
   flutter:
     sdk: flutter
-  amplify_datastore_plugin_interface: 0.1.5
-  amplify_core: 0.1.5
-  plugin_platform_interface: ^2.0.0
-  date_time_format: ^1.1.0
-  meta: ^1.1.8
-  collection: ^1.14.13
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  amplify_core:
+    git:
+      url: https://github.com/luiz-simples/amplify-flutter.git
+      ref: "v0.1.6"
+      path: "packages/amplify_core"
+  amplify_api_plugin_interface:
+    git:
+      url: https://github.com/luiz-simples/amplify-flutter.git
+      ref: "v0.1.6"
+      path: "packages/amplify_api_plugin_interface"
+  plugin_platform_interface:
+  amplify_datastore_plugin_interface:
+    git:
+      url: https://github.com/luiz-simples/amplify-flutter.git
+      ref: "v0.1.6"
+      path: "packages/amplify_datastore_plugin_interface"
+  date_time_format:
+  meta:
+  collection:
 
 # The following section is specific to Flutter.
 flutter:

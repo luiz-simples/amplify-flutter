@@ -1,22 +1,26 @@
 name: amplify_auth_cognito
 description: The Amplify Flutter Auth category plugin using the AWS Cognito provider.
-version: 0.1.5
+version: 0.1.6
 homepage: https://github.com/aws-amplify/amplify-flutter/tree/master/packages/amplify_auth_cognito
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.20.0"
+  sdk: ">=2.11.0 <3.0.0"
+  flutter: "<=2.0.6"
 
 dependencies:
   flutter:
     sdk: flutter
-  amplify_auth_plugin_interface: 0.1.5
-  amplify_core: 0.1.5
-  plugin_platform_interface: ^2.0.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  amplify_core:
+    git:
+      url: https://github.com/luiz-simples/amplify-flutter.git
+      ref: "v0.1.6"
+      path: "packages/amplify_core"
+  amplify_api_plugin_interface:
+    git:
+      url: https://github.com/luiz-simples/amplify-flutter.git
+      ref: "v0.1.6"
+      path: "packages/amplify_api_plugin_interface"
+  plugin_platform_interface:
 
 flutter:
   plugin:
